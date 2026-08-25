@@ -18,6 +18,10 @@ import VueMemo from './components/practices/basic/VueMemo.vue'
 import EventBasic from './components/practices/basic/EventBasic.vue'
 import EventObject from './components/practices/basic/EventObject.vue'
 import EventModifier from './components/practices/basic/EventModifier.vue'
+import ModelBasic from './components/practices/basic/ModelBasic.vue'
+import ModelForm from './components/practices/basic/ModelForm.vue'
+import ModelModifier from './components/practices/basic/ModelModifier.vue'
+import StyleScoped from './components/practices/basic/StyleScoped.vue'
 </script>
 
 <template>
@@ -25,6 +29,7 @@ import EventModifier from './components/practices/basic/EventModifier.vue'
     <SampleOne />
     <SampleTwo />
     <hr />
+
     <VueHtml />
     <VueHtmlXss />
     <VueText />
@@ -44,9 +49,17 @@ import EventModifier from './components/practices/basic/EventModifier.vue'
     <VueOnce />
     <VueMemo />
     <hr />
+
     <EventBasic />
     <EventObject />
     <EventModifier />
+    <hr />
+
+    <ModelBasic />
+    <ModelForm />
+    <ModelModifier />
+    <StyleScoped />
+    <hr />
   </div>
 </template>
 
