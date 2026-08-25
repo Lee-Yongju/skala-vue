@@ -20,7 +20,7 @@ const doubleCount = computed(() => {
     <h2>compute() 캐싱 동작 비교</h2>
 
     <p>count: {{ count }} | dummy: {{ dummy }}</p>
-    <button @click="count++">count 증가 (의종선 변경)</button>
+    <button @click="count++">count 증가 (의존선 변경)</button>
     <button @click="dummy++">dummy 증가 (무관한 변경)</button>
 
     <p>일반 함수 결과: {{ getMethodResult() }}</p>
