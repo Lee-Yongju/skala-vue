@@ -2,6 +2,7 @@
 import StoreCounter from '@/components/practices/library/StoreCounter.vue'
 import AxiosWeather from '@/components/practices/library/AxiosWeather.vue'
 import AxiosJson from '@/components/practices/library/AxiosJson.vue'
+import ElementPlus from './components/practices/library/ElementPlus.vue'
 </script>
 
 <template>
@@ -13,6 +14,9 @@ import AxiosJson from '@/components/practices/library/AxiosJson.vue'
     <hr />
     <AxiosWeather />
     <AxiosJson />
+    <h1>3. ElementPlus</h1>
+    <hr />
+    <ElementPlus />
   </div>
 </template>
 
