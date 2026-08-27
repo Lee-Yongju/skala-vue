@@ -1,34 +1,26 @@
 <script setup>
-import ComputedBasic from './components/compositions/ComputedBasic.vue'
-import ReactiveReactive from './components/compositions/ReactiveReactive.vue'
-import ReactiveRef from './components/compositions/ReactiveRef.vue'
-import WatchersBasic from './components/compositions/WatchersBasic.vue'
-import WatchersMulti from './components/compositions/WatchersMulti.vue'
-import WatchersDeep from './components/compositions/WatchersDeep.vue'
-import WatchersReactive from './components/compositions/WatchersReactive.vue'
-import WatchersWatchEffect from './components/compositions/WatchersWatchEffect.vue'
-import WatchersRefArray from './components/compositions/WatchersRefArray.vue'
-import WatchersReactiveArray from './components/compositions/WatchersReactiveArray.vue'
+import StoreCounter from '@/components/practices/library/StoreCounter.vue'
+import AxiosWeather from '@/components/practices/library/AxiosWeather.vue'
+import AxiosJson from '@/components/practices/library/AxiosJson.vue'
 </script>
 
 <template>
-  <div style="padding: 20px">
-    <ReactiveRef />
-    <ReactiveReactive />
-
-    <ComputedBasic />
-
+  <div class="practice-container">
+    <h1>1. Store</h1>
     <hr />
-
-    <WatchersBasic />
-    <WatchersMulti />
-    <WatchersDeep />
-    <WatchersReactive />
-    <WatchersWatchEffect />
-    <WatchersRefArray />
-    <WatchersReactiveArray />
+    <StoreCounter />
+    <h1>2. Axios</h1>
+    <hr />
+    <AxiosWeather />
+    <AxiosJson />
   </div>
 </template>
+
+<style scoped>
+h1 {
+  color: #67a1d4;
+}
+</style>
 
 <style>
 @import '@/assets/practice.css';

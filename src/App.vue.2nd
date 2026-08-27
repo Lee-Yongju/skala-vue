@@ -1,0 +1,62 @@
+<script setup>
+import ComputedBasic from './components/compositions/ComputedBasic.vue'
+import ReactiveReactive from './components/compositions/ReactiveReactive.vue'
+import ReactiveRef from './components/compositions/ReactiveRef.vue'
+import WatchersBasic from './components/compositions/WatchersBasic.vue'
+import WatchersMulti from './components/compositions/WatchersMulti.vue'
+import WatchersDeep from './components/compositions/WatchersDeep.vue'
+import WatchersReactive from './components/compositions/WatchersReactive.vue'
+import WatchersWatchEffect from './components/compositions/WatchersWatchEffect.vue'
+import WatchersRefArray from './components/compositions/WatchersRefArray.vue'
+import WatchersReactiveArray from './components/compositions/WatchersReactiveArray.vue'
+import LifecycleChild from './components/practices/component/LifecycleChild.vue'
+import PropsEmitsParent from './components/practices/component/PropsEmitsParent.vue'
+import SlotDefaultParent from './components/practices/component/SlotDefaultParent.vue'
+import SlotNamedParent from './components/practices/component/SlotNamedParent.vue'
+import SlotScopedParent from './components/practices/component/SlotScopedParent.vue'
+</script>
+
+<template>
+  <div style="padding: 20px">
+    <h1>Vue3 Composition API 실습</h1>
+    <ReactiveRef />
+    <ReactiveReactive />
+
+    <ComputedBasic />
+
+    <hr />
+
+    <h1>Vue3 Composition API Watchers 실습</h1>
+    <WatchersBasic />
+    <WatchersMulti />
+    <WatchersDeep />
+    <WatchersReactive />
+    <WatchersWatchEffect />
+    <WatchersRefArray />
+    <WatchersReactiveArray />
+
+    <hr />
+    <h1>Vue3 Composition API Lifecycle 실습</h1>
+    <LifecycleChild />
+
+    <hr />
+    <h1>Props n Emits 실습</h1>
+    <PropsEmitsParent />
+
+    <hr />
+    <h1>Slot 실습</h1>
+    <SlotDefaultParent />
+    <SlotNamedParent />
+    <SlotScopedParent />
+  </div>
+</template>
+
+<style scoped>
+h1 {
+  color: #67a1d4;
+}
+</style>
+
+<style>
+@import '@/assets/practice.css';
+</style>
